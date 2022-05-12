@@ -1,0 +1,44 @@
+{
+  "name": "wordle-helper",
+  "version": "1.0.0",
+  "description": "Use regular expressions to help find solutions to the daily Wordle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "helper": "node src/index.js",
+    "build": "browserify src/browserHelper.js -p [ tinyify ] -o public/helper.js",
+    "watch": "watchify src/browserHelper.js -o public/helper.js"
+  },
+  "keywords": [
+    "wordle",
+    "word",
+    "finder",
+    "regular",
+    "expression",
+    "puzzle"
+  ],
+  "author": "Patrick Barabe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paddyredbeard/wordle-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paddyredbeard/wordle-helper/issues"
+  },
+  "homepage": "https://github.com/paddyredbeard/wordle-helper#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "eslint": "^8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "tinyify": "^3.0.0",
+    "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "minimist": "^1.2.6"
+  }
+}

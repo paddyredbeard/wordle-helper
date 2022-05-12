@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordle Helper</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" value="en" />
+    <meta name="author" content="Patrick J Barabe">
+    <meta name="keywords" content="wordle, wordle helper, wordle solver">
+    <meta name="robots" content="all">
+    <meta name="dc.creator" content="Paddy Redbeard">
+
+    <link href="./helper.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <script>
+      if (
+        document.URL !== 'http://127.0.0.1:8080/' &&
+        document.URL !== 'http://localhost:8080/' &&
+        document.URL !== 'https://wordle-helper.pddyrdbrd.net/'
+      ) {
+        document.location.href = 'https://wordle-helper.pddyrdbrd.net/'
+      }
+    </script>
+
+    <main>
+      <h1>Wordle Helper</h1>
+
+      <div class="controls">
+      </div>
+
+      <h2>Instructions</h2>
+
+      <p>
+        Enter a 5-letter pattern. Use letters a - z in known positions.
+        Use an asterisk &#42; to find matches on <em>any</em> letter in that position.
+      </p>
+
+      <p>
+        For example, searching for <code>&#42;onic</code> will result in possible solutions
+        <code>conic</code>, 
+        <code>ionic</code>, 
+        <code>sonic</code>, 
+        <code>tonic</code>
+      </p>
+
+      <div id="helperContainer"></div>
+    </main>
+
+    <footer>
+      <h2>About Wordle Helper</h2>
+      <p>
+        Wordle Helper compares a list of possible solutions against the requested pattern to help you solve the <a href="https://www.nytimes.com/games/wordle" target="_blank">daily Wordle</a>.
+      </p>
+
+      <h2>Terms of Use</h2>
+      <p>By using Wordle Helper, you understand and agree that:</p>
+
+      <ul>
+        <li>Wordle Helper can help you when you are stuck, but there is no guarantee it will solve the puzzle for you.</li>
+        <li>Wordle Helper was developed using a list of 2,309 known solutions published by the New York Times on January 25, 2022. However, there is no guarantee on any given day that the actual solution is represented in the list.</li>
+        <li>Friends, enemies, pets, and/or deities may consider use of Wordle Helper a cheat and may think less of you for using it. If your cat ignores you more than usual after using Wordle Helper, it's your own fault.</li>
+        <li>You are using Worldle Helper at your own peril.</li>
+      </ul>
+
+      <p>Wordle Helper was created by Patrick J. Barabe. The <a href="https://github.com/paddyredbeard/wordle-helper" target="_blank">source code</a> is shared under the MIT license.</p> 
+    </footer>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <!--
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!-- Load Helper JS -->
+    <script src="./helper.js" crossorigin></script>
+
+    <!-- Button JS -->
+    <script src="./helperForm.js"></script>
+  </body>
+</html>

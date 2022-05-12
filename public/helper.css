@@ -1,0 +1,105 @@
+* {
+  color: #33cc33;
+  background-color: #222222;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  color: #eeeeee;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #eeeeee;
+}
+
+main, footer {
+  max-width: 42%;
+  margin: 1em auto;
+  padding: 2em;
+}
+
+main p {
+  margin-bottom: 2rem;
+}
+
+main a {
+  text-decoration: none;
+}
+main a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding-bottom: 0.6em;
+}
+
+footer a,
+footer p,
+footer li {
+  font-size: 0.8rem;
+  color: #999999;
+  padding-bottom: 0.4rem;
+}
+
+code {
+  color: #eeeeee;
+  font-family: monospace;
+}
+
+code.helper-solution {
+  color: #ffff99;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 0 0.4em;
+  font-size: 1.2rem
+}
+
+code.no-solution {
+  color: #999999;
+  font-style: italic;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 0 0.4em;
+  font-size: 1.2rem
+}
+
+input {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #666666;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0.2em;
+}
+
+button {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #666666;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444444;
+}
+
+@media screen and (max-width: 800px) {
+  footer,
+  main {
+    max-width: 66%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer,
+  main {
+    max-width: 87%;
+  }
+}
+
