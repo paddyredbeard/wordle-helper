@@ -8,7 +8,7 @@ words that might match the given pattern.
 
 ### On the web
 
-Visit https://wordle-helper.surge.sh/
+Visit https://wordle-helper.pddyrdbrd.net/
 
 ### On the command-line
 
