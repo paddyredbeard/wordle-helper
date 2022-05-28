@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-useless-constructor */
 
-const e = React.createElement
+const elem = React.createElement
 
 class HelperForm extends React.Component {
   constructor (props) {
@@ -19,29 +19,48 @@ class HelperForm extends React.Component {
   }
 
   render () {
-    return e(
+    return elem(
       'form',
-      {},
+      {
+        autocomplete: 'off'
+      },
       [
-        e(
+        elem(
+          'label',
+          {
+            for: '#search-input'
+          },
+          'Search'
+        ),
+        elem(
           'input',
           {
+            ariaLabel: 'Search',
+            id: 'search-input',
             key: 'input0',
             label: 'Search for:',
             maxLength: 5,
             onChange: this.handleUpdateSearchPattern,
+            placeholder: 'search',
             type: 'text'
           }
         ),
-        e(
+        elem(
           'button',
           {
+            ariaLabel: 'Submit',
             key: 'button0',
-            onClick: this.handleFind
+            onClick: this.handleFind,
+            title: 'Submit'
           },
-          'Search'
+          elem(
+            'i',
+            {
+              className: 'gg-search'
+            }
+          )
         ),
-        e(
+        elem(
           HelperOutput,
           {
             key: 'output0',
@@ -76,10 +95,10 @@ class HelperOutput extends React.Component {
   render () {
     let solutions
     if (!this.props.matchedSolutions || this.props.matchedSolutions.length === 0) {
-      solutions = e('code', { className: 'no-solution' }, 'No Matches')
+      solutions = elem('code', { className: 'no-solution' }, 'No Matches')
     } else {
       solutions = this.props.matchedSolutions.map((next, i) => {
-        return e(
+        return elem(
           'code',
           {
             className: 'helper-solution',
@@ -90,7 +109,7 @@ class HelperOutput extends React.Component {
       })
     }
 
-    return e(
+    return elem(
       'div',
       {
         className: 'helper-output'
@@ -102,4 +121,4 @@ class HelperOutput extends React.Component {
 
 const domContainer = document.querySelector('#helperContainer')
 const root = ReactDOM.createRoot(domContainer)
-root.render(e(HelperForm))
+root.render(elem(HelperForm))

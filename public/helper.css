@@ -46,6 +46,7 @@ footer li {
 code {
   color: #eeeeee;
   font-family: monospace;
+  font-variant: small-caps;
 }
 
 code.helper-solution {
@@ -53,7 +54,7 @@ code.helper-solution {
   display: inline-block;
   margin: 1em 0;
   padding: 0 0.4em;
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 code.no-solution {
@@ -66,27 +67,42 @@ code.no-solution {
 }
 
 input {
-  border: 1px solid #cccccc;
-  border-radius: 3px;
+  border: 0;
   background-color: #666666;
   color: #ffffff;
   display: inline-block;
-  margin-right: 1em;
+  font-variant: small-caps;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 0.2rem;
   padding: 0.2em;
+  letter-spacing: 1.6rem;
+  max-width: 80%;
+}
+
+label {
+  visibility: hidden;
+  display: none;
 }
 
 button {
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-  background-color: #666666;
-  color: #ffffff;
-  display: inline-block;
-  padding: 0.2em 0.6em;
+  border: 0;
   cursor: pointer;
+  display: inline-block;
+  padding: 1.2rem 1.8rem 0.8rem 1.2rem;
+  width: 3rem;
+  height: 3rem;
+  max-width: 10%;
 }
 
-button:hover {
-  background-color: #444444;
+button i.gg-search {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+button i.gg-search:hover {
+  color: #ffff66;
+  background-color: #999999;
 }
 
 @media screen and (max-width: 800px) {
