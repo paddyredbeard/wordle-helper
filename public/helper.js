@@ -6,7 +6,6 @@ window.helloWorld = helper.helloWorld
 window.patternIsValid = helper.patternIsValid
 window.patternToRegex = helper.patternToRegex
 
-
 },{"./main.js":2}],2:[function(require,module,exports){
 /**
  * Ensure requested pattern is valid:
