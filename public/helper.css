@@ -68,16 +68,17 @@ code.no-solution {
 
 input {
   border: 0;
-  background-color: #666666;
+  border-bottom: 2px solid #999999;
+  background-color: #333333;
   color: #ffffff;
   display: inline-block;
   font-variant: small-caps;
   font-size: 2rem;
   font-weight: 600;
   margin-right: 0.2rem;
-  padding: 0.2em;
+  padding: 0.2rem 2rem;
   letter-spacing: 1.6rem;
-  max-width: 80%;
+  max-width: 60%;
 }
 
 label {
@@ -109,6 +110,19 @@ button i.gg-search:hover {
   footer,
   main {
     max-width: 66%;
+  }
+
+  input {
+    max-width: 70%;
+    padding: 0.2rem 0.6rem;
+    letter-spacing: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer,
+  main {
+    max-width: 78%;
   }
 }
 

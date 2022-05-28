@@ -36,6 +36,7 @@ class HelperForm extends React.Component {
           'input',
           {
             ariaLabel: 'Search',
+            autoFocus: true,
             id: 'search-input',
             key: 'input0',
             label: 'Search for:',
