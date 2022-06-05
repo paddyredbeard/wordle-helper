@@ -17,8 +17,8 @@ If you have a working NodeJS environment:
 1. Clone Wordle Helper: `$ git clone https://github.com/paddyredbeard/wordle-helper.git`
 2. Install: `$ cd wordle-helper && npm install`
 3. Get a hint (eg. for pattern `*onic`):
-  - `$ npm run helper -- --pattern='*onic'` or
-  - `$ node src/index '*onic'`
+   - `$ npm run helper -- --pattern='*onic'` or
+   - `$ node src/index '*onic'`
 
 ## About
 
