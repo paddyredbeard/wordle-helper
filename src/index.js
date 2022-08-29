@@ -26,7 +26,9 @@ axios.get(solutionsUri)
   .then(function (response) {
     // handle success
     const matches = helper.findMatches(pattern, response.data)
-    console.log(matches)
+    matches.forEach((elem) => {
+      console.log(elem)
+    })
     return matches
   })
   .catch(function (error) {
