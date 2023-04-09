@@ -29,16 +29,16 @@
   "homepage": "https://github.com/paddyredbeard/wordle-helper#readme",
   "devDependencies": {
     "browserify": "^17.0.0",
-    "eslint": "^8.15.0",
+    "eslint": "^8.38.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "tinyify": "^3.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "tinyify": "^4.0.0",
     "watchify": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "minimist": "^1.2.6"
+    "axios": "^1.3.5",
+    "minimist": "^1.2.8"
   }
 }
