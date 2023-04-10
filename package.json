@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "helper": "node src/index.js",
-    "build": "browserify src/browserHelper.js -p [ tinyify ] -o public/helper.js",
+    "build:tiny": "echo 'when tinyify is fixed, run: browserify src/browserHelper.js -p [ tinyify ] -o public/helper.js'",
+    "build": "browserify src/browserHelper.js -o public/helper.js",
     "watch": "watchify src/browserHelper.js -o public/helper.js"
   },
   "keywords": [
@@ -34,7 +35,6 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
-    "tinyify": "^4.0.0",
     "watchify": "^4.0.0"
   },
   "dependencies": {

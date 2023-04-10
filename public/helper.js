@@ -1,1 +1,67 @@
-!function(){const e=function(e){return 5!==e.length?(console.log("Invalid pattern requested: pattern should be 5 characters"),"Invalid pattern requested: pattern should be 5 characters"):-1===e.search(/[^a-z*]/gi)||(console.log("Invalid pattern requested: pattern should not contain numbers or special characters other than *"),"Invalid pattern requested: pattern should not contain numbers or special characters other than *")},t=function(e){let t="";for(let n=0;n<e.length;n++)e[n].search(/[a-z]/gi)>-1?t+=e[n]:t+="[a-z]";return t};var n={findMatches:function(n,r){const a=e(n);if(!0===a){const e=t(n),a=new RegExp(e,"igm");return r.match(a)}return[a]},patternIsValid:e,patternToRegex:t};window.findMatches=n.findMatches,window.helloWorld=n.helloWorld,window.patternIsValid=n.patternIsValid,window.patternToRegex=n.patternToRegex}();
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const helper = require('./main.js')
+
+window.findMatches = helper.findMatches
+window.helloWorld = helper.helloWorld
+window.patternIsValid = helper.patternIsValid
+window.patternToRegex = helper.patternToRegex
+
+},{"./main.js":2}],2:[function(require,module,exports){
+/**
+ * Ensure requested pattern is valid:
+ * - pattern was requested
+ * - pattern is exactly 5 characters
+ * - pattern does not contain numbers
+ */
+const patternIsValid = function (pattern) {
+  if (pattern.length !== 5) {
+    console.log('Invalid pattern requested: pattern should be 5 characters')
+    return 'Invalid pattern requested: pattern should be 5 characters'
+  }
+
+  if (pattern.search(/[^a-z*]/gi) !== -1) {
+    console.log('Invalid pattern requested: pattern should not contain numbers or special characters other than *')
+    return 'Invalid pattern requested: pattern should not contain numbers or special characters other than *'
+  }
+
+  return true
+}
+
+/**
+ * Convert pattern to regex pattern
+ */
+const patternToRegex = function (pattern) {
+  let expression = ''
+  for (let i = 0; i < pattern.length; i++) {
+    if (pattern[i].search(/[a-z]/gi) > -1) {
+      expression += pattern[i]
+    } else {
+      expression += '[a-z]'
+    }
+  }
+
+  return expression
+}
+
+/**
+ * Find matching solutions
+ */
+const findMatches = function (pattern, solutions) {
+  const isValid = patternIsValid(pattern)
+  if (isValid === true) {
+    const regexPattern = patternToRegex(pattern)
+    const expression = new RegExp(regexPattern, 'igm')
+
+    return solutions.match(expression)
+  } else {
+    return [isValid]
+  }
+}
+
+module.exports = {
+  findMatches,
+  patternIsValid,
+  patternToRegex
+}
+
+},{}]},{},[1]);
