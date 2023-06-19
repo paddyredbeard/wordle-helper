@@ -1,6 +1,6 @@
 {
   "name": "wordle-helper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Use regular expressions to help find solutions to the daily Wordle",
   "main": "index.js",
   "scripts": {
