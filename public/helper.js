@@ -46,13 +46,25 @@ const patternToRegex = function (pattern) {
 /**
  * Find matching solutions
  */
-const findMatches = function (pattern, solutions) {
+const findMatches = function (pattern, solutions, omissions) {
   const isValid = patternIsValid(pattern)
   if (isValid === true) {
     const regexPattern = patternToRegex(pattern)
-    const expression = new RegExp(regexPattern, 'igm')
+    const expression = new RegExp(regexPattern, 'gim')
+    const possibleSolutions = solutions.match(expression)
 
-    return solutions.match(expression)
+    // omissions are letters known not to match that
+    // are used to filter out possible solutions
+    if (typeof omissions !== 'undefined' && omissions.length > 0) {
+      const negation = new RegExp(`[${omissions}]`, 'i')
+      const matchedSolutions = possibleSolutions.filter(
+        nextPossible => negation.test(nextPossible) === false
+      )
+
+      return matchedSolutions
+    } else {
+      return possibleSolutions
+    }
   } else {
     return [isValid]
   }
