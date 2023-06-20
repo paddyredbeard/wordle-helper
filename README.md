@@ -26,7 +26,7 @@ Solutions were copied from the New York Times [list of 2,309 solutions](https://
 
 This software uses an [archived version](https://gist.github.com/paddyredbeard/95cec9ed4a7a15b4c7209ba8502438de).
 
-Note: [Since November 2022](https://www.nytimes.com/2022/11/07/crosswords/wordle-editor.html), the Times's curated list of solutions has been updated, so the list used by Wordle Helper is no longer complete or entirely accurate.
+Note: [Since November 2022](https://www.nytimes.com/2022/11/07/crosswords/wordle-editor.html), the Times's curated list of [solutions](https://static.nytimes.com/newsgraphics/2022/01/25/wordle-solver/assets/solutions.txt) has been updated, so the list used by Wordle Helper is no longer complete or entirely accurate.
 
 ## License
 
