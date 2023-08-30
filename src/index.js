@@ -37,10 +37,16 @@ axios.get(solutionsUri)
   .then(function (response) {
     // handle success
     const matches = helper.findMatches(pattern, response.data, omissions)
-    matches.forEach((elem) => {
-      console.log(elem)
-    })
-    return matches
+
+    if (matches !== null && typeof matches !== 'undefined') {
+      matches.forEach((elem) => {
+        console.log(elem)
+      })
+
+      return matches
+    }
+
+    return []
   })
   .catch(function (error) {
     // handle error
