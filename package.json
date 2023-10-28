@@ -30,15 +30,15 @@
   "homepage": "https://github.com/paddyredbeard/wordle-helper#readme",
   "devDependencies": {
     "browserify": "^17.0.0",
-    "eslint": "^8.50.0",
+    "eslint": "^8.52.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^15.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "watchify": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^1.5.0",
+    "axios": "^1.6.0",
     "minimist": "^1.2.8"
   }
 }
