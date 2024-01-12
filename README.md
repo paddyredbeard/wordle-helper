@@ -12,13 +12,15 @@ Visit https://wordle-helper.pddyrdbrd.net/
 
 ### On the command-line
 
-If you have a working NodeJS environment:
+If you have a working [NodeJS](https://nodejs.org/) environment:
 
 1. Clone Wordle Helper: `$ git clone https://github.com/paddyredbeard/wordle-helper.git`
 2. Install: `$ cd wordle-helper && npm install`
 3. Get a hint (eg. for pattern `*onic`):
    - `$ npm run helper -- --pattern='*onic'` or
    - `$ node src/index '*onic'`
+4. Optionally supply a list of letters to negate in search results:
+   - `$ node src/index '*onic' st`
 
 ## About
 
