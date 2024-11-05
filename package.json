@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/paddyredbeard/wordle-helper#readme",
   "devDependencies": {
-    "browserify": "^17.0.0",
+    "browserify": "^17.0.1",
     "eslint": "^8.56.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.29.1",
@@ -38,7 +38,7 @@
     "watchify": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^1.7.5",
+    "axios": "^1.7.7",
     "minimist": "^1.2.8"
   }
 }
