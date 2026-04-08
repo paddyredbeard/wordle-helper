@@ -40,7 +40,7 @@
     "watchify": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^1.13.2",
+    "axios": "1.14",
     "minimist": "^1.2.8"
   }
 }
