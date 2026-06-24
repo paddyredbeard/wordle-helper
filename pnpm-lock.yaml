@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       axios:
-        specifier: ~1.17.0
-        version: 1.17.0
+        specifier: ~1.18.1
+        version: 1.18.1
       minimist:
         specifier: ^1.2.8
         version: 1.2.8
@@ -22,20 +22,20 @@ importers:
         specifier: ^17.0.1
         version: 17.0.1
       eslint:
-        specifier: ^10.4.1
-        version: 10.4.1
+        specifier: ^10.5.0
+        version: 10.5.0
       eslint-config-standard:
         specifier: ^17.1.0
-        version: 17.1.0(eslint-plugin-import@2.32.0(eslint@10.4.1))(eslint-plugin-n@18.1.0(eslint@10.4.1))(eslint-plugin-promise@7.3.0(eslint@10.4.1))(eslint@10.4.1)
+        version: 17.1.0(eslint-plugin-import@2.32.0(eslint@10.5.0))(eslint-plugin-n@18.1.0(eslint@10.5.0))(eslint-plugin-promise@7.3.0(eslint@10.5.0))(eslint@10.5.0)
       eslint-plugin-import:
         specifier: ^2.32.0
-        version: 2.32.0(eslint@10.4.1)
+        version: 2.32.0(eslint@10.5.0)
       eslint-plugin-n:
         specifier: ^18.1.0
-        version: 18.1.0(eslint@10.4.1)
+        version: 18.1.0(eslint@10.5.0)
       eslint-plugin-promise:
         specifier: ^7.3.0
-        version: 7.3.0(eslint@10.4.1)
+        version: 7.3.0(eslint@10.5.0)
       standard:
         specifier: ^17.1.2
         version: 17.1.2
@@ -239,8 +239,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  axios@1.17.0:
-    resolution: {integrity: sha512-J8SwNxprqqpbfenehxWYXE7CW+wM1BB4w3+N+g+/Wx40xM4rsLrfPmHHxSWIxJLYDgSY/HqlFPIYb2/S3rxafw==}
+  axios@1.18.1:
+    resolution: {integrity: sha512-3nTvFlvpn9Zu/RkHUqtc7/+al4UpRW5az71ap5zccp6e8RAYEzhMTecX8Dz1wWDYrPpUoB1HAQEGEAEvUr7S9g==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -672,8 +672,8 @@ packages:
     resolution: {integrity: sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  eslint@10.4.1:
-    resolution: {integrity: sha512-AyIKhnOBuOAdueD7RB3xB+YeAWScb9jHsJBgH2Hcde8InP5JYhqrRR6iTMHyTEwgENK54Cp44e4v8BwNhsuHuw==}
+  eslint@10.5.0:
+    resolution: {integrity: sha512-1y+7C+vi12bUK1IpZeaV3gsH9fHLBmPvYmPx42pvT/E9yG0IC8g3PUZZgp0+JLJl7ZDK0flc2gc+Aw9dpCvIsQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     hasBin: true
     peerDependencies:
@@ -1748,9 +1748,9 @@ packages:
 
 snapshots:
 
-  '@eslint-community/eslint-utils@4.9.1(eslint@10.4.1)':
+  '@eslint-community/eslint-utils@4.9.1(eslint@10.5.0)':
     dependencies:
-      eslint: 10.4.1
+      eslint: 10.5.0
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/eslint-utils@4.9.1(eslint@8.57.1)':
@@ -1982,7 +1982,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  axios@1.17.0:
+  axios@1.18.1:
     dependencies:
       follow-redirects: 1.16.0
       form-data: 4.0.5
@@ -2475,9 +2475,9 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-compat-utils@0.5.1(eslint@10.4.1):
+  eslint-compat-utils@0.5.1(eslint@10.5.0):
     dependencies:
-      eslint: 10.4.1
+      eslint: 10.5.0
       semver: 7.8.1
 
   eslint-config-standard-jsx@11.0.0(eslint-plugin-react@7.37.5(eslint@8.57.1))(eslint@8.57.1):
@@ -2485,19 +2485,19 @@ snapshots:
       eslint: 8.57.1
       eslint-plugin-react: 7.37.5(eslint@8.57.1)
 
-  eslint-config-standard@17.1.0(eslint-plugin-import@2.32.0(eslint@10.4.1))(eslint-plugin-n@15.7.0(eslint@8.57.1))(eslint-plugin-promise@6.6.0(eslint@8.57.1))(eslint@8.57.1):
+  eslint-config-standard@17.1.0(eslint-plugin-import@2.32.0(eslint@10.5.0))(eslint-plugin-n@15.7.0(eslint@8.57.1))(eslint-plugin-promise@6.6.0(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
-      eslint-plugin-import: 2.32.0(eslint@10.4.1)
+      eslint-plugin-import: 2.32.0(eslint@10.5.0)
       eslint-plugin-n: 15.7.0(eslint@8.57.1)
       eslint-plugin-promise: 6.6.0(eslint@8.57.1)
 
-  eslint-config-standard@17.1.0(eslint-plugin-import@2.32.0(eslint@10.4.1))(eslint-plugin-n@18.1.0(eslint@10.4.1))(eslint-plugin-promise@7.3.0(eslint@10.4.1))(eslint@10.4.1):
+  eslint-config-standard@17.1.0(eslint-plugin-import@2.32.0(eslint@10.5.0))(eslint-plugin-n@18.1.0(eslint@10.5.0))(eslint-plugin-promise@7.3.0(eslint@10.5.0))(eslint@10.5.0):
     dependencies:
-      eslint: 10.4.1
-      eslint-plugin-import: 2.32.0(eslint@10.4.1)
-      eslint-plugin-n: 18.1.0(eslint@10.4.1)
-      eslint-plugin-promise: 7.3.0(eslint@10.4.1)
+      eslint: 10.5.0
+      eslint-plugin-import: 2.32.0(eslint@10.5.0)
+      eslint-plugin-n: 18.1.0(eslint@10.5.0)
+      eslint-plugin-promise: 7.3.0(eslint@10.5.0)
 
   eslint-import-resolver-node@0.3.10:
     dependencies:
@@ -2507,11 +2507,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.13.0(eslint-import-resolver-node@0.3.10)(eslint@10.4.1):
+  eslint-module-utils@2.13.0(eslint-import-resolver-node@0.3.10)(eslint@10.5.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
-      eslint: 10.4.1
+      eslint: 10.5.0
       eslint-import-resolver-node: 0.3.10
     transitivePeerDependencies:
       - supports-color
@@ -2525,12 +2525,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-es-x@7.8.0(eslint@10.4.1):
+  eslint-plugin-es-x@7.8.0(eslint@10.5.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.4.1)
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.5.0)
       '@eslint-community/regexpp': 4.12.2
-      eslint: 10.4.1
-      eslint-compat-utils: 0.5.1(eslint@10.4.1)
+      eslint: 10.5.0
+      eslint-compat-utils: 0.5.1(eslint@10.5.0)
 
   eslint-plugin-es@4.1.0(eslint@8.57.1):
     dependencies:
@@ -2538,7 +2538,7 @@ snapshots:
       eslint-utils: 2.1.0
       regexpp: 3.2.0
 
-  eslint-plugin-import@2.32.0(eslint@10.4.1):
+  eslint-plugin-import@2.32.0(eslint@10.5.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -2547,9 +2547,9 @@ snapshots:
       array.prototype.flatmap: 1.3.3
       debug: 3.2.7
       doctrine: 2.1.0
-      eslint: 10.4.1
+      eslint: 10.5.0
       eslint-import-resolver-node: 0.3.10
-      eslint-module-utils: 2.13.0(eslint-import-resolver-node@0.3.10)(eslint@10.4.1)
+      eslint-module-utils: 2.13.0(eslint-import-resolver-node@0.3.10)(eslint@10.5.0)
       hasown: 2.0.4
       is-core-module: 2.16.2
       is-glob: 4.0.3
@@ -2604,12 +2604,12 @@ snapshots:
       resolve: 1.22.12
       semver: 7.8.1
 
-  eslint-plugin-n@18.1.0(eslint@10.4.1):
+  eslint-plugin-n@18.1.0(eslint@10.5.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.4.1)
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.5.0)
       enhanced-resolve: 5.23.0
-      eslint: 10.4.1
-      eslint-plugin-es-x: 7.8.0(eslint@10.4.1)
+      eslint: 10.5.0
+      eslint-plugin-es-x: 7.8.0(eslint@10.5.0)
       get-tsconfig: 4.14.0
       globals: 15.15.0
       globrex: 0.1.2
@@ -2620,10 +2620,10 @@ snapshots:
     dependencies:
       eslint: 8.57.1
 
-  eslint-plugin-promise@7.3.0(eslint@10.4.1):
+  eslint-plugin-promise@7.3.0(eslint@10.5.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.4.1)
-      eslint: 10.4.1
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.5.0)
+      eslint: 10.5.0
 
   eslint-plugin-react@7.37.5(eslint@8.57.1):
     dependencies:
@@ -2676,9 +2676,9 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@10.4.1:
+  eslint@10.5.0:
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.4.1)
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.5.0)
       '@eslint-community/regexpp': 4.12.2
       '@eslint/config-array': 0.23.5
       '@eslint/config-helpers': 0.6.0
@@ -3680,7 +3680,7 @@ snapshots:
   standard@17.1.2:
     dependencies:
       eslint: 8.57.1
-      eslint-config-standard: 17.1.0(eslint-plugin-import@2.32.0(eslint@10.4.1))(eslint-plugin-n@15.7.0(eslint@8.57.1))(eslint-plugin-promise@6.6.0(eslint@8.57.1))(eslint@8.57.1)
+      eslint-config-standard: 17.1.0(eslint-plugin-import@2.32.0(eslint@10.5.0))(eslint-plugin-n@15.7.0(eslint@8.57.1))(eslint-plugin-promise@6.6.0(eslint@8.57.1))(eslint@8.57.1)
       eslint-config-standard-jsx: 11.0.0(eslint-plugin-react@7.37.5(eslint@8.57.1))(eslint@8.57.1)
       eslint-plugin-import: 2.32.0(eslint@8.57.1)
       eslint-plugin-n: 15.7.0(eslint@8.57.1)
