@@ -13,13 +13,14 @@
 
     <link href='https://css.gg/search.css' rel='stylesheet'>
     <link href="./helper.css" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
   </head>
 
   <body>
     <script>
       if (
-        document.URL !== 'http://127.0.0.1:8080/' &&
-        document.URL !== 'http://localhost:8080/' &&
+        document.URL !== 'http://127.0.0.1:1234/' &&
+        document.URL !== 'http://localhost:1234/' &&
         document.URL !== 'https://wordle-helper.pddyrdbrd.net/'
       ) {
         document.location.href = 'https://wordle-helper.pddyrdbrd.net/'
@@ -81,10 +82,7 @@
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 
-    <!-- Load Helper JS -->
-    <script src="./helper.js" crossorigin></script>
-
-    <!-- Button JS -->
-    <script src="./helperForm.js"></script>
+    <!-- Load app entry (Parcel bundles all sources) -->
+    <script type="module" src="../src/app.js"></script>
   </body>
 </html>
