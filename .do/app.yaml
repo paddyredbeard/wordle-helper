@@ -1,0 +1,25 @@
+name: wordle-helper
+region: nyc
+
+domains:
+- domain: wordle-helper.pddyrdbrd.net
+  type: PRIMARY
+
+static_sites:
+  - name: wordle-helper-web
+    github:
+      repo: paddyredbeard/wordle-helper
+      branch: main
+      deploy_on_push: true
+    build_command: pnpm ci && CI=true pnpm run build
+    output_dir: dist
+    routes:
+      - path: /
+    envs:
+      - key: CI
+        scope: BUILD_TIME
+        value: "true"
+      - key: npm_config_confirm_modules_purge
+        scope: BUILD_TIME
+        value: "false"
+

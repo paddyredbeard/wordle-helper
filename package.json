@@ -2,13 +2,11 @@
   "name": "wordle-helper",
   "version": "1.1.0",
   "description": "Use regular expressions to help find solutions to the daily Wordle",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "helper": "node src/index.js",
-    "build:tiny": "echo 'when tinyify is fixed, run: browserify src/browserHelper.js -p [ tinyify ] -o public/helper.js'",
-    "build": "browserify src/browserHelper.js -o public/helper.js",
-    "watch": "watchify src/browserHelper.js -o public/helper.js"
+    "dev": "parcel serve public/index.html --dist-dir dist",
+    "build": "parcel build public/index.html --dist-dir dist"
   },
   "keywords": [
     "wordle",
@@ -29,15 +27,10 @@
   },
   "homepage": "https://github.com/paddyredbeard/wordle-helper#readme",
   "devDependencies": {
-    "@eslint/config-helpers": "^0.6.0",
-    "browserify": "^17.0.1",
-    "eslint": "^10.5.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-n": "^18.1.0",
-    "eslint-plugin-promise": "^7.3.0",
-    "standard": "^17.1.2",
-    "watchify": "^4.0.0"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "globals": "^17.7.0",
+    "parcel": "^2.14.4"
   },
   "dependencies": {
     "axios": "~1.18.1",

@@ -1,8 +1,3 @@
-'use strict'
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-useless-constructor */
-
 const elem = React.createElement
 
 class HelperForm extends React.Component {
