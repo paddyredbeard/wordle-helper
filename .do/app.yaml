@@ -11,9 +11,15 @@ static_sites:
       repo: paddyredbeard/wordle-helper
       branch: main
       deploy_on_push: true
-    build_command: pnpm run build
+    build_command: pnpm ci && CI=true pnpm run build
     output_dir: dist
-    environment_slug: node-js
     routes:
       - path: /
+    envs:
+      - key: CI
+        scope: BUILD_TIME
+        value: "true"
+      - key: npm_config_confirm_modules_purge
+        scope: BUILD_TIME
+        value: "false"
 

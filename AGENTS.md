@@ -27,3 +27,5 @@
 - **No local solutions file**: the word list is fetched at runtime from a GitHub Gist URL hardcoded in `src/index.js` and `src/helperForm.js`. No network = no results.
 - **No tests**: `npm test` exits with code 1. Add tests before making logic changes.
 - **React from CDN**: React and ReactDOM are loaded as UMD globals in `index.html`. `src/helperForm.js` does not import them.
+- **DO app spec**: `.do/app.yaml` defines the deployment. Build command is `pnpm ci && CI=true pnpm run build`. DO publishes from `dist/`.
+- **Local dev build**: `doctl apps dev build` uses `no_cache: true` in `.do/dev-config.yaml` to work around a Docker volume permission issue.
