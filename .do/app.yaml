@@ -9,9 +9,9 @@ static_sites:
   - name: wordle-helper-web
     github:
       repo: paddyredbeard/wordle-helper
-      branch: main
+      branch: prod
       deploy_on_push: true
-    build_command: pnpm ci && CI=true pnpm run build
+    build_command: CI=true pnpm run build
     output_dir: dist
     routes:
       - path: /
