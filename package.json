@@ -28,12 +28,13 @@
   "homepage": "https://github.com/paddyredbeard/wordle-helper#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "eslint": "^10.6.0",
-    "globals": "^17.7.0",
+    "@rehydra/opencode": "^0.14.0",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
     "parcel": "^2.16.4"
   },
   "dependencies": {
-    "axios": "~1.18.1",
+    "axios": "~1.20.0",
     "minimist": "^1.2.8"
   }
 }
